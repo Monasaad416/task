@@ -1,0 +1,12 @@
+@media print {
+  //This is the only element that should appear, so let's remove the margins
+  [dir="rtl"] .content-wrapper,
+  [dir="rtl"] .main-footer {
+    margin-left: unset !important;
+    margin-right: 0 !important;
+  }
+
+  [dir="rtl"] .invoice-col {
+    float: right;
+  }
+}

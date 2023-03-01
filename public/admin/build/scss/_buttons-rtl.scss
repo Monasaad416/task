@@ -1,0 +1,24 @@
+//
+// Component: Button
+//
+[dir="rtl"] {
+  .btn {
+    // input file btn
+    &.btn-file {
+      > input[type="file"] {
+        right: unset !important;
+        left: 0;
+        text-align: left;
+      }
+    }
+  }
+
+  // Application buttons
+  .btn-app {
+    margin: 0 10px 10px 0;
+    > .badge {
+      right: unset !important;
+      left: -10px;
+    }
+  }
+}

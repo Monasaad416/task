@@ -1,0 +1,154 @@
+[dir="rtl"] .card {
+  &.maximized-card {
+    left: unset !important;
+    right: 0;
+  }
+
+  .border-right {
+    border-right: unset !important;
+    border-left: 1px solid $card-border-color;
+  }
+
+  .border-left {
+    border-left: unset !important;
+    border-right: 1px solid $card-border-color;
+  }
+
+  &.card-tabs {
+    &:not(.card-outline) {
+      > .card-header {
+        .nav-item {
+          &:first-child .nav-link {
+            border-left-color: unset !important;
+            border-right-color: transparent;
+          }
+        }
+      }
+    }
+
+    &.card-outline {
+      .nav-item {
+        &:first-child .nav-link {
+          border-left: unset !important;
+          border-right: 0;
+          margin-left: unset !important;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &.card-outline-tabs {
+    .card-header {
+      .nav-item {
+        &:first-child .nav-link {
+          border-left: unset !important;
+          border-right: 0;
+          margin-left: unset !important;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// Box header
+[dir="rtl"] .card-header {
+  > .card-tools {
+    float: left;
+    margin-right: unset !important;
+    margin-left: -$card-spacer-x / 2;
+  }
+}
+
+[dir="rtl"] .card-title {
+  float: right !important;
+}
+[dir="rtl"] .chart-legend {
+  > li {
+    @media (max-width: map-get($grid-breakpoints, sm)) {
+      float: right;
+      margin-right: unset !important;
+      margin-left: 10px;
+    }
+  }
+}
+
+// Comment Box
+[dir="rtl"] .card-comments {
+  .card-comment {
+    img {
+      float: right;
+    }
+  }
+
+  .comment-text {
+    margin-left: unset !important;
+    margin-right: 40px;
+  }
+}
+
+// Widget: TODO LIST
+[dir="rtl"] .todo-list {
+  > li {
+    border-left: unset !important;
+    border-right: 2px solid $gray-200;
+
+    > input[type="checkbox"] {
+      margin: 0 5px 0 10px;
+    }
+
+    .text {
+      margin-left: unset !important;
+      margin-right: 5px;
+    }
+
+    // Time labels
+    .badge {
+      margin-left: unset !important;
+      margin-right: 10px;
+    }
+
+    // Tools and options box
+    .tools {
+      float: left;
+
+      // icons
+      > .fa,
+      > .fas,
+      > .far,
+      > .fab,
+      > .fal,
+      > .fad,
+      > .svg-inline--fa,
+      > .ion {
+        margin-right: unset !important;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  // Color variants
+  @each $name, $color in $theme-colors {
+    .#{$name} {
+      border-left-color: unset !important;
+      border-right-color: $color;
+    }
+  }
+
+  @each $name, $color in $colors {
+    .#{$name} {
+      border-left-color: unset !important;
+      border-right-color: $color;
+    }
+  }
+}
+
+[dir="rtl"] .card-default {
+  .nav-item {
+    &:first-child .nav-link {
+      border-left: unset !important;
+      border-right: 0;
+    }
+  }
+}

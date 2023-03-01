@@ -1,0 +1,30 @@
+//
+// Component: Callout
+//
+
+// Base styles (regardless of theme)
+[dir="rtl"] .callout {
+  border-left: unset !important;
+  border-right: 5px solid $gray-200;
+
+  // Themes for different contexts
+  &.callout-danger {
+    border-left-color: unset !important;
+    border-right-color: darken(theme-color("danger"), 10%);
+  }
+
+  &.callout-warning {
+    border-left-color: unset !important;
+    border-right-color: darken(theme-color("warning"), 10%);
+  }
+
+  &.callout-info {
+    border-left-color: unset !important;
+    border-right-color: darken(theme-color("info"), 10%);
+  }
+
+  &.callout-success {
+    border-left-color: unset !important;
+    border-right-color: darken(theme-color("success"), 10%);
+  }
+}

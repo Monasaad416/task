@@ -1,0 +1,127 @@
+[dir="rtl"] {
+  .user-block {
+    float: right;
+    img {
+      float: right;
+    }
+    .username,
+    .description,
+    .comment {
+      margin-left: unset !important;
+      margin-right: 50px;
+    }
+    &.user-block-sm {
+      .username,
+      .description,
+      .comment {
+        margin-left: unset !important;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  // Image sizes
+  .img-sm,
+  .img-md,
+  .img-lg {
+    float: right;
+  }
+
+  .img-sm {
+    + .img-push {
+      margin-left: unset !important;
+      margin-right: $img-size-sm + $img-size-push;
+    }
+  }
+
+  .img-md {
+    + .img-push {
+      margin-left: unset !important;
+      margin-right: $img-size-md + $img-size-push;
+    }
+  }
+
+  .img-lg {
+    + .img-push {
+      margin-left: unset !important;
+      margin-right: $img-size-lg + $img-size-push;
+    }
+  }
+
+  // General attachemnt block
+  .attachment-block {
+    .attachment-img {
+      float: right;
+    }
+
+    .attachment-pushed {
+      margin-left: unset !important;
+      margin-right: 110px;
+    }
+  }
+
+  // Overlays for Card, InfoBox & SmallBox
+  .card,
+  .overlay-wrapper,
+  .info-box,
+  .small-box {
+    // Box overlay for LOADING STATE effect
+    > .overlay,
+    > .loading-img {
+      left: unset !important;
+      right: 0;
+    }
+  }
+
+  .tab-pane {
+    // Box overlay for LOADING STATE effect on Tab Panels
+    > .overlay-wrapper {
+      > .overlay {
+        margin-left: unset !important;
+        margin-right: -$card-spacer-x;
+      }
+    }
+  }
+
+  // Ribbon
+  .ribbon-wrapper {
+    right: unset !important;
+    left: -2px;
+
+    &.ribbon-lg {
+      .ribbon {
+        right: unset !important;
+        left: $ribbon-lg-right;
+      }
+    }
+
+    &.ribbon-xl {
+      .ribbon {
+        right: unset !important;
+        left: $ribbon-xl-right;
+      }
+    }
+
+    .ribbon {
+      right: unset !important;
+      left: $ribbon-right;
+      transform: rotate(-45deg);
+
+      &::before {
+        left: unset !important;
+        right: 0;
+      }
+
+      &::after {
+        right: unset !important;
+        left: 0;
+      }
+    }
+  }
+
+  // Scroll To Top
+  .back-to-top {
+    right: unset !important;
+    left: 1.25rem;
+  }
+}

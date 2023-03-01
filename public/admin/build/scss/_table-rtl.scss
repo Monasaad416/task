@@ -1,0 +1,33 @@
+[dir="rtl"] {
+  .table {
+    .card-body.p-0 & {
+      thead > tr > th,
+      thead > tr > td,
+      tfoot > tr > th,
+      tfoot > tr > td,
+      tbody > tr > th,
+      tbody > tr > td {
+        &:first-of-type {
+          padding-left: unset !important;
+          padding-right: map-get($spacers, 4);
+        }
+
+        &:last-of-type {
+          padding-right: unset !important;
+          padding-left: map-get($spacers, 4);
+        }
+      }
+    }
+  }
+}
+[dir="rtl"] [data-widget="expandable-table"] {
+  &[aria-expanded="true"] {
+    td > i {
+      // stylelint-disable selector-max-attribute
+
+      &[class*="left"] {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//
+// Component: Main Header
+//
+
+[dir="rtl"] .main-header {
+  .navbar-nav {
+    &[class*="-right"] {
+      .dropdown-menu {
+        left: 0 !important;
+        right: auto !important;
+
+        @media (max-width: breakpoint-max(xs)) {
+          right: 0 !important;
+          left: auto !important;
+        }
+      }
+    }
+  }
+}
+
+// Navbar badge
+[dir="rtl"] .navbar-badge {
+  right: unset !important;
+  left: 5px !important;
+}
+
+[dir="rtl"] .btn-navbar {
+  border-left-width: unset !important;
+  border-right-width: 0;
+}
+
+[dir="rtl"] .form-control-navbar {
+  border-right-width: unset !important;
+  border-left-width: 0;
+
+  + .input-group-append {
+    margin-left: unset !important;
+    margin-right: 0;
+  }
+}

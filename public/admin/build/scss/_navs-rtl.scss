@@ -1,0 +1,33 @@
+// Vertical Tabs
+[dir="rtl"] .nav-tabs.flex-column {
+  border-right: unset !important;
+  border-left: $nav-tabs-border-width solid $nav-tabs-border-color;
+
+  .nav-link {
+    border-bottom-left-radius: unset !important;
+    border-bottom-right-radius: $nav-tabs-border-radius;
+    margin-right: unset !important;
+    margin-left: -$nav-tabs-border-width;
+  }
+
+  &.nav-tabs-right {
+    border-right: $nav-tabs-border-width solid $nav-tabs-border-color;
+    border-left: 0;
+
+    .nav-link {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: $nav-tabs-border-radius;
+      border-top-right-radius: 0;
+      border-top-left-radius: $nav-tabs-border-radius;
+      margin-left: unset !important;
+      margin-right: -$nav-tabs-border-width;
+    }
+  }
+}
+
+[dir="rtl"] .navbar-no-expand {
+  .nav-link {
+    padding-right: $navbar-nav-link-padding-x;
+    padding-left: $navbar-nav-link-padding-x;
+  }
+}

@@ -1,0 +1,39 @@
+//
+// Component: Forms
+//
+
+[dir="rtl"] .form-group {
+  &.has-icon {
+    .form-control {
+      padding-right: unset !important;
+      padding-left: 35px;
+    }
+    .form-icon {
+      right: unset !important;
+      left: 3px;
+    }
+  }
+}
+
+// stylelint-disable-next-line selector-no-qualifying-type
+[dir="rtl"] textarea.form-control {
+  &.is-warning {
+    @if $enable-validation-icons {
+      padding-right: unset !important;
+      padding-left: $input-height-inner;
+      background-position: top $input-height-inner-quarter left $input-height-inner-quarter;
+    }
+  }
+}
+
+[dir="rtl"] .dark-mode {
+  .navbar-dark {
+    .form-control-navbar + .input-group-prepend,
+    .form-control-navbar + .input-group-append {
+      > .btn-navbar {
+        border-left: unset !important;
+        border-right: none;
+      }
+    }
+  }
+}

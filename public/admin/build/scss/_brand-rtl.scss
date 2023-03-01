@@ -1,0 +1,35 @@
+//
+// Component: Brand
+//
+
+[dir="rtl"] .brand-link {
+  .pushmenu {
+    margin-right: unset !important;
+    margin-left: $sidebar-padding-x;
+  }
+
+  .brand-image {
+    float: right;
+    margin-right: 0.8rem;
+    margin-left: 0.5rem;
+  }
+
+  .brand-image-xs {
+    float: right;
+  }
+
+  &.text-sm {
+    .brand-image {
+      margin-left: unset !important;
+      margin-right: 0.95rem;
+    }
+  }
+}
+.brand-link {
+  [dir="rtl"] .text-sm & {
+    .brand-image {
+      margin-left: unset !important;
+      margin-right: 0.95rem;
+    }
+  }
+}

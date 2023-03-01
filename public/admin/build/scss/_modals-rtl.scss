@@ -1,0 +1,11 @@
+//
+// Component: Modals
+//
+
+// Overlay
+[dir="rtl"] .modal-dialog {
+  .overlay {
+    left: unset !important;
+    right: 0;
+  }
+}

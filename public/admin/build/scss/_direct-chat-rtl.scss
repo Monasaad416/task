@@ -1,0 +1,61 @@
+[dir="rtl"] .direct-chat-text {
+  margin-left: 5px;
+  margin-right: 50px;
+
+  //Create the arrow
+  &::after,
+  &::before {
+    border-left-color: transparent;
+    border-right-color: inherit;
+    right: auto;
+    left: 100%;
+    @include rotate(180deg);
+  }
+}
+.direct-chat-text {
+  [dir="rtl"] .right & {
+    margin-right: 5px;
+    margin-left: 50px;
+
+    &::after,
+    &::before {
+      border-right-color: transparent;
+      border-left-color: inherit;
+      left: auto;
+      right: 100%;
+    }
+  }
+}
+[dir="rtl"] .direct-chat-img {
+  float: right;
+}
+.direct-chat-img {
+  [dir="rtl"] .right & {
+    float: left;
+  }
+}
+
+[dir="rtl"] .contacts-list-img {
+  float: right;
+}
+
+[dir="rtl"] .contacts-list-info {
+  margin-left: unset !important;
+  margin-right: 45px;
+}
+[dir="rtl"] .dark-mode {
+  .direct-chat-text {
+    &::after,
+    &::before {
+      border-right-color: unset !important;
+      border-left-color: lighten($dark, 10%);
+    }
+  }
+  .right > .direct-chat-text {
+    &::after,
+    &::before {
+      border-right-color: unset !important;
+      border-left-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+[dir="rtl"] .timeline {
+  // The line
+  &::before {
+    left: unset !important;
+    right: 31px;
+  }
+  // Element
+  > div {
+    margin-right: unset !important;
+    margin-left: 10px;
+    // The content
+    > .timeline-item {
+      margin-right: 60px;
+      margin-left: 15px;
+
+      // The time and header
+      > .time {
+        float: left;
+      }
+    }
+    // The icons at line
+    > .fa,
+    > .fas,
+    > .far,
+    > .fab,
+    > .fal,
+    > .fad,
+    > .svg-inline--fa,
+    > .ion {
+      left: unset !important;
+      right: 18px;
+    }
+  }
+}

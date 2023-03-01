@@ -1,0 +1,10 @@
+//
+// Component: Progress Bar
+//
+
+.progress {
+  &.vertical {
+    margin-right: unset !important;
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,26 @@
+[dir="rtl"] {
+  .widget-user {
+    .widget-user-image {
+      left: unset !important;
+      right: 50%;
+      margin-left: unset !important;
+      margin-right: -45px;
+    }
+  }
+
+  //User Widget Style 2
+  .widget-user-2 {
+    .widget-user-username,
+    .widget-user-desc {
+      margin-left: unset !important;
+      margin-right: 75px;
+    }
+
+    //User image container
+    .widget-user-image {
+      > img {
+        float: right;
+      }
+    }
+  }
+}

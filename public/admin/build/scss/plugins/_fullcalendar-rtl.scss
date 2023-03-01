@@ -1,0 +1,35 @@
+[dir="rtl"] {
+    .fc-header-title h2 {
+        margin-left: unset !important;
+        margin-right: 10px;
+    }
+
+    .fc-header-right {
+        padding-right: unset !important;
+        padding-left: 10px;
+    }
+
+    .fc-header-left {
+        padding-left: unset !important;
+        padding-right: 10px;
+    }
+
+    .fc-widget-header:last-of-type,
+    .fc-widget-content:last-of-type {
+        border-right: unset !important;
+        border-left: 0;
+    }
+
+    .fc-day-number {
+        padding-right: unset !important;
+        padding-left: 10px;
+    }
+
+    .fc-color-picker {
+        > li {
+            float: right;
+            margin-right: unset !important;
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+[dir="rtl"] .login-card-body,
+[dir="rtl"] .register-card-body {
+  .input-group {
+    .form-control {
+      border-right: 1px solid #ced4da;
+      border-left: none;
+      &:focus {
+        border-right-color: #80bdff !important;
+      }
+    }
+
+    .input-group-text {
+      border-bottom-right-radius: unset !important;
+      border-bottom-left-radius: $border-radius;
+      border-left: 1px solid #ced4da;
+      border-right: none;
+      border-top-right-radius: unset !important;
+      border-top-left-radius: $border-radius;
+    }
+  }
+}

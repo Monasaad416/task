@@ -1,0 +1,14 @@
+[dir="rtl"] .small-box {
+  // the icon
+  .icon {
+    > i {
+      right: unset !important;
+      left: 15px;
+    }
+
+    svg {
+      right: unset !important;
+      left: 15px;
+    }
+  }
+}

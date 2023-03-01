@@ -1,0 +1,15 @@
+[dir="rtl"] {
+  .lockscreen-image {
+    left: unset !important;
+    right: -10px;
+  }
+
+  .lockscreen-credentials {
+    margin-left: unset !important;
+    margin-right: 70px;
+
+    .btn .fas {
+      transform: rotate(180deg) !important;
+    }
+  }
+}
